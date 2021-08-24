@@ -1,0 +1,20 @@
+:root {
+  --bg-color: #dddfdf;
+  --text-color: #0c0c0c;
+  --text-highlight: #7d70ba;
+
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --timeline-img: url("./components/images/timeline_light.png");
+}
+
+[data-theme="dark"] {
+  --bg-color: #0c0c0c;
+  --text-color: #dddfdf;
+
+  --box-shadow: rgba(255, 255, 255, 0.2);
+  --timeline-img: url("./components/images/timeline_dark.png");
+}
+
+body {
+  background-color: var(--bg-color);
+}

@@ -1,0 +1,41 @@
+.portfolio-3 {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.portfolio-3 > tr {
+  width: 100%;
+}
+
+.portfolio-3 > tr > td {
+  width: 33%;
+  align-items: center;
+}
+
+.portfolio-2 {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.portfolio-2 > tr {
+  width: 100%;
+}
+
+.portfolio-2 > tr > td {
+  width: 50%;
+  align-items: center;
+}
+
+.portfolio-1 {
+  width: 100%;
+}
+
+.portfolio-1 > tr {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.portfolio-1 > tr > td {
+  margin-bottom: 50px;
+  display: block;
+}

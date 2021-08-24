@@ -1,0 +1,47 @@
+.card-bg {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 var(--box-shadow);
+  background-color: var(--bg-color);
+  height: 325px;
+  margin: auto;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: var(--text-color);
+}
+
+.card-bg > img {
+  width: 250px;
+  height: 250px;
+}
+
+.card-bg > p {
+  margin: 0;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.card-props {
+  width: 100%;
+  height: 100%;
+}
+
+.card-footer {
+  height: 40px;
+}
+
+.card-props > tr {
+  height: 40px;
+}
+
+.git,
+.live {
+  width: 40%;
+}
+
+.info {
+  width: 20%;
+}
+
+.git > p,
+.live > p {
+  margin: 0;
+}
