@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/About.css';
+import { Element } from 'react-scroll';
 
 export class About extends Component {
     constructor(props){
@@ -17,7 +18,7 @@ export class About extends Component {
         }
 
         return (
-            <div>
+            <Element name='about'>
                 <div className="about-heading">
                     <h1 className="section-header">
                         About Me
@@ -37,7 +38,7 @@ export class About extends Component {
                         </td>
                     </tr>
                 </table>
-            </div>
+            </Element>
         )
     }
 }

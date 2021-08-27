@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
 import '../styles/Contact.css'
 import {AiOutlineMail} from 'react-icons/ai'
 import { FiInstagram } from 'react-icons/fi'
+import { Element } from 'react-scroll';
 
 export class Contact extends Component {
     render() {
         return (
-            <div>
+            <Element name='contact'>
                 <div className="about-heading contact">
                     <h1 className="section-header">
                         Contact Me
@@ -19,15 +19,15 @@ export class Contact extends Component {
                     <tr>
                         <td className="contact-left">
                             <div className="contact-details">
-                                <Link className="contact-link" to="/">
+                                <a className="contact-a" to="/">
                                     <AiOutlineMail className="contact-icon"/>
                                     <p>sehajbirsingh97@gmail.com</p>    
-                                </Link>
+                                </a>
                                     
-                                <Link className="contact-link" to="/">
+                                <a className="contact-a" to="/">
                                     <FiInstagram className="contact-icon"/>
                                     <p>@sehajbir</p>
-                                </Link>
+                                </a>
                             </div>
                         </td>
                         <td className="contact-right">
@@ -35,7 +35,7 @@ export class Contact extends Component {
                         </td>
                     </tr>
                 </table>
-            </div>
+            </Element>
         )
     }
 }

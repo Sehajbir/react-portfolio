@@ -7,6 +7,7 @@ import About from './components/pages/About';
 import Skills from './components/pages/Skills';
 import Portfolio from './components/pages/Portfolio';
 import Contact from './components/pages/Contact';
+import Scroll from 'react-scroll'
 
 class App extends Component {
   constructor(){
@@ -36,17 +37,14 @@ class App extends Component {
 
   render(){
   return (
-    <Router>
+    <>
       <Navbar mobile={this.state.mobile} />
-      <Switch>
-        <Route path="/"/>
-      </Switch>
       <Hero mobile={this.state.mobile}/>
       <About />
       <Skills />
       <Portfolio mobile={this.state.mobile}/>
       <Contact/>
-    </Router>
+    </>
   );
   }
 }

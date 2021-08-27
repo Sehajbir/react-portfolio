@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Card from '../Card'
 import '../styles/Portfolio.css'
 import demo from '../images/skills/tapestry.png'
+import { Element } from 'react-scroll';
 
 export class Portfolio extends Component {
     constructor(props){
@@ -10,7 +11,7 @@ export class Portfolio extends Component {
 
     render() {
         return (
-            <div>
+            <Element name="portfolio">
                 <div className="about-heading">
                     <h1 className="section-header">
                         Portfolio
@@ -24,12 +25,12 @@ export class Portfolio extends Component {
                     </tr>
                     <tr>
                         <td>
-                            <Card git="github" live="live" img={demo} projectName="Orion"/>
+                            <Card git="github" live="live" img={demo} projectName="React Profile Card"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <Card git="github" live="live" img={demo} projectName="Orion"/>
+                            <Card git="github" live="live" img={demo} projectName="This Site!"/>
                         </td>
                     </tr>
                     <tr>
@@ -50,10 +51,10 @@ export class Portfolio extends Component {
                             <Card git="github" live="live" img={demo} projectName="Orion"/>
                         </td>
                         <td>
-                            <Card git="github" live="live" img={demo} projectName="Orion"/>
+                            <Card git="github" live="live" img={demo} projectName="React Profile Card"/>
                         </td>
                         <td>
-                            <Card git="github" live="live" img={demo} projectName="Orion"/>
+                            <Card git="github" live="live" img={demo} projectName="This Site!"/>
                         </td>
                     </tr>
                 </table>
@@ -69,7 +70,7 @@ export class Portfolio extends Component {
                 </table>
                 </>}
                 
-            </div>
+            </Element>
         )
     }
 }

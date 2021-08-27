@@ -1,10 +1,9 @@
-import React, {Component, useState} from 'react'
-import {Link} from 'react-router-dom'
+import React, {Component} from 'react'
 import '../styles/Navbar.css';
-import { FaRegMoon, FaDev} from "react-icons/fa";
+import { FaRegMoon} from "react-icons/fa";
 import {FiSun, FiMenu} from "react-icons/fi";
-import {AiOutlineHome, AiOutlineInfoCircle, AiOutlineClose, AiOutlineSend, AiOutlineFundProjectionScreen} from 'react-icons/ai';
 import {HiOutlineDocumentText} from 'react-icons/hi';
+import { Link} from 'react-scroll'
 
 class Navbar extends Component {
 
@@ -19,7 +18,6 @@ class Navbar extends Component {
 
 
     render(){
-        var mode = "light";
 
     const handleModeChange = () => {
         console.log("here");
@@ -63,22 +61,22 @@ class Navbar extends Component {
         {mobile ? 
         <>
                 <div className="navbar-mobile-container">
-                    <Link to="/" className="navbar-logo-mobile">
+                    <a href="#" to="/" className="navbar-logo-mobile">
                         Sehaj
-                    </Link>
+                    </a>
                 </div>
                 <div className="navbar-mobile-icon">
-                    {this.state.menuOpen === true ? <AiOutlineClose  onClick={openMenuItems}/> : <FiMenu onClick={openMenuItems}/>}
+                    {this.state.menuOpen === true ? <a href="#"iOutlineClose  onClick={openMenuItems}/> : <FiMenu onClick={openMenuItems}/>}
                 </div>
 
                 <div className="navbar-mobile-card" id={"mobile-menu"} style={{display: "none"}}>
                     <table className="mobile-menu-items">
                         <tr>
                             <td>
-                                <AiOutlineHome/><p>Home</p>
+                                <a href="#"iOutlineHome/><p>Home</p>
                             </td>
                             <td>
-                                <AiOutlineInfoCircle/><p>About</p>
+                                <a href="#"iOutlineInfoCircle/><p>About</p>
                             </td>
                             <td>
                             <HiOutlineDocumentText/> <p>Skills</p>
@@ -86,10 +84,10 @@ class Navbar extends Component {
                         </tr>
                         <tr>
                             <td>
-                                <AiOutlineFundProjectionScreen/> <p>Portfolio</p>
+                                <a href="#"iOutlineFundProjectionScreen/> <p>Portfolio</p>
                             </td>
                             <td>
-                                <AiOutlineSend/> <p>Contact Me</p>
+                                <a href="#"iOutlineSend/> <p>Contact Me</p>
                             </td>
                             <td>
                                 {this.state.mode === "light" ? <FiSun onClick={handleModeChange}/> : <FaRegMoon onClick={handleModeChange}/>}<p>Theme</p>
@@ -101,39 +99,50 @@ class Navbar extends Component {
             :
             <div className="navbar">
                 <div className="navbar-container container">
-                    <Link to="/" className="navbar-logo">
+                    <a href="#" to="/" className="navbar-logo">
                         Sehaj
-                    </Link>
+                    </a>
                     <ul className="nav-menu">
                         <li className="menu-item">
-                            <Link to='/' id="home" className="nav-links">
+                            <Link to="home" smooth="true">
+                            <a href="#" id="home" className="nav-links">
                                 Home
+                            </a>
                             </Link>
                         </li>
                         <li className="menu-item">
-                            <Link to='/' id="about" className="nav-links">
+                        <Link to="about" smooth="true">
+                            <a href="#"  id="about" className="nav-links">
                                 About
-                            </Link>
+                            </a>
+                        </Link>
                         </li>
                         <li className="menu-item">
-                            <Link to='/' id="skills" className="nav-links">
+                        <Link to="skills" smooth="true">
+                            <a href="#"  id="skills" className="nav-links">
                                 Skills
-                            </Link>
+                            </a>
+                        </Link>
                         </li>
+
                         <li className="menu-item">
-                            <Link to='/' id="portfolio" className="nav-links">
+                        <Link to="portfolio" smooth="true">
+                            <a href="#"  id="portfolio" className="nav-links">
                                 Portfolio
-                            </Link>
+                            </a>
+                        </Link>
                         </li>
                         <li className="menu-item">
-                            <Link to='/' id="contactMe" className="nav-links">
+                        <Link to="contact" smooth="true">
+                            <a href="#"  id="contactMe" className="nav-links">
                                 Contact Me
-                            </Link>
+                            </a>
+                        </Link>
                         </li>
                         <li className="menu-item">
-                            <Link to='/' className="nav-links" onClick={handleModeChange}>
+                            <a href="#"  className="nav-links" onClick={handleModeChange}>
                                 {this.state.mode === "light" ? <FiSun/> : <FaRegMoon/>}
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>
