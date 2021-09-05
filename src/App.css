@@ -5,6 +5,8 @@
 
   --box-shadow: rgba(0, 0, 0, 0.2);
   --timeline-img: url("./components/images/timeline_light.png");
+
+  --text-color-disabled: #83878d;
 }
 
 [data-theme="dark"] {
@@ -13,6 +15,7 @@
 
   --box-shadow: rgba(255, 255, 255, 0.2);
   --timeline-img: url("./components/images/timeline_dark.png");
+  --text-color-disabled: #83878d;
 }
 
 body {

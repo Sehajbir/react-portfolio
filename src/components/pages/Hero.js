@@ -94,7 +94,9 @@ export class Hero extends Component {
                 </table>
             </div>}
             <div className="scrollDown">
-                <AiOutlineArrowDown />
+                <Redir to='about' smooth="true">
+                    <AiOutlineArrowDown style={{cursor: "pointer"}}/>
+                </Redir>
             </div>
             </Element>
             

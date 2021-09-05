@@ -12,6 +12,7 @@
 .card-bg > img {
   width: 250px;
   height: 250px;
+  object-fit: contain;
 }
 
 .card-bg > p {
@@ -34,14 +35,25 @@
 
 .git,
 .live {
-  width: 40%;
+  width: 50%;
 }
 
 .info {
-  width: 20%;
+  width: 100%;
+  display: block;
+  line-height: 32px;
+  font-size: 20px;
 }
 
-.git > p,
-.live > p {
-  margin: 0;
+.info > a {
+  text-decoration: none;
+}
+
+.git > a,
+.live > a {
+  text-decoration: none;
+}
+
+.disabled {
+  color: var(--text-color-disabled);
 }
