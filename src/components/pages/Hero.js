@@ -34,7 +34,7 @@ export class Hero extends Component {
                     <tr className="hero-tr-about">
                         <td className="about-mobile">
                             <h1>Hi! I'm Sehajbir</h1> 
-                            <h3>Creative Frontend Designer with 2+ years of Industry Experience</h3>
+                            <h3>Full Stack Developer with 2+ years of Industry Experience</h3>
                             <Button btnType="btn-normal" btnText="Contact Me" />
                             <Button btnType="btn-outline" btnText="Resume" btnIcon={<AiOutlineDownload/>}></Button>
                         </td>
@@ -81,7 +81,7 @@ export class Hero extends Component {
                         </td>
                         <td className="about">
                             <h1>Hi! I'm Sehajbir</h1> 
-                            <h3>Creative Frontend Designer with 2+ years of Industry Experience</h3>
+                            <h3>Full Stack Developer with 2+ years of Industry Experience</h3>
                             <Redir to="contact" smooth="true">
                                 <Button btnType="btn-normal" btnText="Contact Me" />
                             </Redir>
